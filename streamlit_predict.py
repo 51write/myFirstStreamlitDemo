@@ -35,11 +35,11 @@ format_data = [bill_length, bill_depth, flipper_length, body_mass,
                island_dream, island_torgerson, island_biscoe, sex_female, sex_male]
 
 # 使用pickle的load方法从磁盘文件反序列化加载一个之前保存的随机森林模型对象
-with open(getCurrentDir()+'\\'+'rfc_model.pkl', 'rb') as f:
+with open('rfc_model.pkl', 'rb') as f:
     rfc_model = pickle.load(f)
 
 # 使用pickle的load方法从磁盘文件反序列化加载一个之前保存的映射对象
-with open(getCurrentDir()+'\\''output_uniques.pkl', 'rb') as f:
+with open('output_uniques.pkl', 'rb') as f:
     output_uniques_map = pickle.load(f)
 
 
